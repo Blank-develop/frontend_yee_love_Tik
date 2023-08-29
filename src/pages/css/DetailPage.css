@@ -1,0 +1,118 @@
+.text-header-detail {
+    font-size: 20px;
+    margin-top: 2vh;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+
+}
+
+.container-detail {
+    padding: 5vw;
+}
+
+.item-wrapper-detail {
+    display: inline-flex;
+    margin-right: 5px;
+}
+
+.item-detail-most {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #007bff;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: 0.7s;
+    border-radius: 20px;
+    color: white;
+}
+
+.item-detail-least {
+    position: relative;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+
+.h1-detail {
+    text-align: center;
+    /* margin-top: 10px; */
+
+}
+
+.item-img-detail {
+    height: auto;
+    width: 15vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.box-item-img {
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin-left: 37.5vw;
+    align-items: center;
+    justify-items: center;
+    background-color: #00000009;
+}
+
+.text-result-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1201px) {
+    .item-img-detail {
+        width: 20vw;
+    }
+    .box-item-img {
+        margin-left: 40vw;
+    }
+    .text-header-detail {
+        font-size: 20px;
+        margin-top: 2vw;
+    }
+    .item-detail { 
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .h1-detail {
+        text-align: center;
+        margin-top: -1vh;
+    }
+    .item-detail-least { 
+        font-size: 3vw;
+    }
+    .item-detail-most { 
+        font-size: 3vw;
+    }
+    .text-header-detail {
+        font-size: 14px;
+    }
+    .item-img-detail {
+        width: 30vw;
+    }
+    .box-item-img {
+        margin-left: 34vw;
+    }
+}

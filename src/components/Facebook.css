@@ -1,0 +1,35 @@
+.fb-button {
+    margin-top: 2%;
+    width: 60%;
+    max-width: 200px;
+    height: 42px;
+    background-color: #4267B2;
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+.fb-button:hover {
+    background-color: rgb(255, 40, 40);
+    color: #4267B2;
+}
+.text-in-btn {
+    margin-top: 6.5%;
+    margin-left: 7%;
+    color: rgb(255, 255, 255);
+}
+
+.fb-icon {
+    height: auto;
+    width: 1.5vw;
+    margin-top: 3%;
+    margin-left: 0.3vw;
+}
+
+@media screen and (max-width: 480px) { 
+    .fb-icon {
+        height: auto;
+        width: 7vw;
+        margin-left: 1.3vw;
+    }
+}

@@ -1,0 +1,166 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container{
+  background-image: url('./bg.png'); 
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.text-01-home {
+  padding-top: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Item Container */
+.item-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Button Styles */
+.item-least {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: 0.7s;
+  border: #007bff solid 1px;
+  border-radius: 20px;
+}
+
+.item-most {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: 0.7s;
+  border: #007bff solid 1px;
+  border-radius: 20px;
+}
+
+.item-most:hover {
+  background-color: #007bff;
+  filter: drop-shadow(0 0 2rem rgba(0, 60, 255, 0.562));
+  color: white;
+}
+
+.item-least:hover {
+  background-color: #ff0000;
+  filter: drop-shadow(0 0 2rem rgba(0, 60, 255, 0.562));
+  color: white;
+}
+
+.item-most.checked-most {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.item-least.checked-least {
+  background-color: #f1261f;
+  color: #fff;
+}
+
+/* Checkmark Logo */
+.logo-check {
+  width: 20px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 5px;
+}
+
+/* Background Container */
+.background {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Next Button */
+.div-button-next {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  /* Remove margin-right and padding-top */
+  margin-bottom: 3%;
+  display: flex; /* Add flex display */
+  justify-content: center; /* Add space between buttons */
+}
+
+.button-next {
+  /* Your common button styling properties */
+  position: sticky;
+  font-size: 18px;
+  width: 12vw;
+  height: 120%;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: 1.5s;
+  border: #ffffff solid 2px;
+}
+.button-previous{
+  position: sticky;
+  font-size: 18px;
+  width: 12vw;
+  height: 120%;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: 1.5s;
+  border: #ffffff solid 2px;
+}
+.button-next {
+  /* Update margin-left for both buttons */
+  margin-left: 1%; /* Adjust as needed */
+}
+
+.button-previous {
+  /* Update margin-left for both buttons */
+  margin-left: 1%; /* Adjust as needed */
+}
+
+.button-next:hover,
+.button-previous:hover {
+  /* Your common hover styling properties */
+  background-color: #ffffff;
+  border: #007bff solid 2px;
+  color: #007bff;
+}

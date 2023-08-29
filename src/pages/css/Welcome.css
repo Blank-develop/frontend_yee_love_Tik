@@ -1,0 +1,147 @@
+/* Common styles for all screen sizes */
+.body-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./bg.png'); 
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: rgba(158, 55, 255, 0.308);
+}
+
+.tag-p-home {
+  color: black;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+}
+Link-welcome {
+  text-decoration: none;
+}
+.text-btn-start {
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 2.2vw;
+  transition: 1.5s;
+}
+
+.img-welcome {
+  position: absolute;
+  display: inline;
+  bottom: 130px;
+  right: 130px;
+  height: 55vh;
+  width: 500px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.container-welcome {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+}
+
+.text-welcome {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.font-size-addphone {
+  margin-top: 10%;
+  width: 90%;
+  height: 8vh;
+  background-color: #2B92D4;
+  border-radius: 15px;
+  font-size: 23px;
+  color: white;
+  border: white solid 2px;
+  transition: 1.5s;
+}
+
+.font-size-addphone:hover {
+  color: #2B92D4;
+  border: #2B92D4 solid 2px;
+  background-color: white;
+
+  .text-btn-start {
+    color: #2B92D4;
+  }
+}
+
+.button-start {
+  margin-top: 10%;
+  width: 90%;
+  height: 8vh;
+  background-color: #2B92D4;
+  border-radius: 15px;
+  font-size: 30px;
+  color: white;
+  border: white solid 2px;
+  transition: 1.5s;
+}
+
+.btn-position {
+  margin-top: 10px;
+}
+.btn-en{
+  width: 70%;
+}
+.position-th {
+  margin-top: -30px;
+}
+
+.button-start:hover {
+  color: #2B92D4;
+  border: #2B92D4 solid 2px;
+  background-color: white;
+
+  .text-btn-start {
+    color: #2B92D4;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-welcome {
+    top: 20%;
+  }
+
+  .text-welcome {
+    font-size: 30px;
+  }
+
+  .button-start {
+    font-size: 18px;
+  }
+
+  .img-welcome {
+    bottom: -50px;
+    right: -50px;
+    transform: scale(0.6);
+  }
+
+  .button-start {
+    width: 100%;
+    height: 30px;
+    background-color: #2B92D4;
+    font-size: 15px;
+    color: white;
+    border: white solid 2px;
+  }
+  
+.tag-p-home {
+  font-size: 3vw;
+}
+
+
+
+}

@@ -1,0 +1,132 @@
+/* body {
+    background: rgb(15,0,74);
+background: -moz-linear-gradient(38deg, rgba(15,0,74,1) 0%, rgba(233,233,233,0.9864320728291317) 44%, rgba(250,250,250,0.9192051820728291) 51%, rgba(235,235,235,0.969625350140056) 57%, rgba(18,0,91,1) 100%);
+background: -webkit-linear-gradient(38deg, rgba(15,0,74,1) 0%, rgba(233,233,233,0.9864320728291317) 44%, rgba(250,250,250,0.9192051820728291) 51%, rgba(235,235,235,0.969625350140056) 57%, rgba(18,0,91,1) 100%);
+background: linear-gradient(38deg, rgba(15,0,74,1) 0%, rgba(233,233,233,0.9864320728291317) 44%, rgba(250,250,250,0.9192051820728291) 51%, rgba(235,235,235,0.969625350140056) 57%, rgba(18,0,91,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f004a",endColorstr="#12005b",GradientType=1);
+height: 100vh;
+} */
+.area{
+    background-image: url('./bg.png'); 
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.profile-yee{
+    padding-top:60px;
+}
+.btnGoogle {
+    background-color: #db4a39;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnGoogle:hover {
+    background-color: #c53727;
+}
+
+.hr-line {
+    border: rgb(74, 55, 243) solid 0.25px;
+}
+
+.img-pro {
+    border-radius: 100%;
+    width: 70%;
+    height: auto;
+    border: #fff solid 2px;
+}
+
+.pro-container {
+    margin-top: 1%;
+    border-radius: 5px;
+    padding: 3.5%;
+    width: 20vw;
+    height: 70vh;
+    border: rgba(0, 0, 0, 0.616) solid 3px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 7px #000000fd);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+}
+
+.context h1 {
+
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.profile-text {
+    text-align: left;
+    font-size: 1.3vw;
+    color: #000000;
+}
+
+.text-face-profile {
+    margin-top: 5px;
+    color: #2B92D4;
+    margin-bottom: -15px;
+    text-align: left;
+}
+
+.text-header {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    margin-top: -2vh;
+    color: #000000;
+}
+
+.btn-google-logout {
+    width: 300px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    .pro-container {
+        scale: 0.8;
+        width: 350px;
+    }
+
+    .img-pro {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .text-header {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .hr-line {
+        margin-bottom: -20px;
+    }
+
+    .btn-google-logout {
+        width: 300px;
+        font-size: 30px;
+    }
+
+}

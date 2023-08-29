@@ -1,0 +1,235 @@
+.filter-box-history {
+  margin-top: 0px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  /* height: fit-content; */
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  /* height: 25vh; */
+  padding-top: 85px;
+}
+.con-his{
+  background-image: url('./bg.png'); 
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.filter-input {
+  height: 50px;
+  width: 50px;
+  margin-right: 21vw;
+  border: #ffffff00;
+  margin-bottom: -3vh;
+  background-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.center-button-container button {
+  margin: 0 10px;
+}
+
+.name-history {
+  margin-bottom: 30px;
+}
+
+.date-history {
+  text-align: end;
+  position: relative;
+}
+
+.text-face-filter {
+  margin-bottom: -1.7vh;
+  margin-right: 1vw;
+  font-size: 1vw;
+}
+
+.no-result-history {
+  margin-top: 25vh;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.delete-icon {
+
+  height: auto;
+  width: 40px;
+  margin-left: 2vw;
+}
+
+.btn-next-history {
+  background-color: #4757ee;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  border: #fff solid 2px;
+  transition: 1.5s;
+}
+.btn-next-history:hover {
+  background-color: #fff;
+  color: #4757ee;
+  border: #4757ee solid 2px;
+}
+
+.btn-back-history {
+  background-color: #4757ee;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  border: #fff solid 2px;
+}
+.btn-back-history:hover {
+  background-color: #fff;
+  color: #4757ee;
+  border: #4757ee solid 2px;
+  transition: 1.5s;
+}
+
+.text-my-history {
+  position: absolute;
+  font-size: 2.5vw;
+  margin-bottom: -4vh;
+  margin-right: 70vw;
+  font-weight: bold;
+}
+
+.list-history {
+  padding: 0;
+}
+
+.page-number {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.item-history {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+
+.container-history {
+  margin: 2vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 22px;
+  max-height: 60vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #555feb #8a7777;
+}
+
+.container-history::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container-history::-webkit-scrollbar-thumb {
+  background-color: #4757ee;
+}
+
+.container-history::-webkit-scrollbar-track {
+  background-color: #e0c0c0;
+}
+
+
+[type="date"] {
+  border: #ffffff67 solid 2px;
+  background: #ffffff00 url('/public/icon/icon-filter.png') 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1201px) {
+  .text-face-filter {
+    font-size: 17px;
+  }
+
+  [type="date"] {
+    background: #fff url('/public/icon/icon-filter-medium.png') 97% 50% no-repeat;
+  }
+
+  .text-face-filter {
+    margin-bottom: -10px;
+  }
+
+  .text-my-history {
+    font-size: 4vw;
+    margin-bottom: -13px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .container-history {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .delete-icon {
+    height: auto;
+    width: 30px;
+    margin-left: 2vw;
+  }
+
+  [type="date"] {
+    margin-top: 50px;
+    background: #ff000000 url('/public/icon/icon-filter-medium.png') 97% 50% no-repeat;
+  }
+
+  [type="date"]::-webkit-calendar-picker-indicator {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name-history {
+    flex: 1;
+    font-size: 15px;
+  }
+
+  .date-history {
+    font-size: 2.5vw;
+    text-align: center;
+
+  }
+
+  .text-face-filter {
+    font-size: 10px;
+    margin-bottom: -20px;
+  }
+
+  .text-my-history {
+    font-size: 4vw;
+    margin-bottom: -25px;
+  }
+
+  .filter-input {
+    height: 25px;
+    width: 25px;
+  }
+}
